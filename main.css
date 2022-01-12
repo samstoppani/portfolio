@@ -141,6 +141,32 @@ body {
   border: 2px solid yellow;
 }
 
+#overlay .musicIcon {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#overlay .musicIcon .bar {
+  display: block;
+  position: relative;
+  background-color: white;
+  color: white;
+  height: 20%;
+  width: 5px;
+  border-radius: 50px;
+  margin: 0 5px;
+}
+
 #overlay .container {
   width: 100%;
   height: 100%;
@@ -172,6 +198,16 @@ body {
   width: 100%;
   position: relative;
   padding: auto;
+}
+
+#overlay .container #content .section .btn {
+  margin: auto;
+  padding: 10px 40px !important;
+  color: white;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
 }
 
 #overlay .container #content .section .center {
@@ -312,7 +348,7 @@ body {
   background-color: transparent;
   border-radius: 10px;
   border: 2px solid white;
-  margin: 10px auto;
+  margin: 20px auto;
   outline-color: #4a0ac9;
   display: block;
   width: 100%;
@@ -338,18 +374,33 @@ body {
   }
 }
 
-#overlay .container #content .section form #submitBtn {
-  margin: auto;
-  padding: .5rem 1rem;
-  font-size: 1rem;
-  color: white;
-  background-color: transparent;
-  border-radius: 5px;
-  border: 2px solid white;
+#overlay .container #content .section .contactIcon > img {
+  width: 75px;
+  margin: 20px;
 }
 
-#overlay .container #content .section form #submitBtn:hover {
-  cursor: pointer;
+@media screen and (max-width: 768px) {
+  #overlay .container #content .section .contactIcon > img {
+    width: 50px;
+  }
+}
+
+@-webkit-keyframes musicAnim {
+  50% {
+    height: 20%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes musicAnim {
+  50% {
+    height: 20%;
+  }
+  100% {
+    height: 100%;
+  }
 }
 
 @-webkit-keyframes fadeIn {
