@@ -2,12 +2,12 @@ export default [
     {
         name: 'topBanner',
         type: 'texture',
-        path: 'textures/topBanner.png'
+        path: 'textures/topBanner.jpg'
     },
     {
         name: 'bottomBanner',
         type: 'texture',
-        path: 'textures/bottomBanner.png'
+        path: 'textures/bottomBanner.jpg'
     },
     {
         name: 'profilePic',
