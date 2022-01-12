@@ -1,5 +1,4 @@
 import * as THREE from 'three';
-import { gsap } from 'gsap'
 import Experience from '../Experience';
 
 import floatingParticlesVertexShader from "../../shaders/floating/vertex.glsl";

@@ -11,6 +11,7 @@ export default class Content {
         this.scrollbar = this.experience.scrollbar.instance
         this.sizes = this.experience.sizes
 
+        this.firstEvent = false
 
         // Map section markers to scroll percentage
         this.section = {
@@ -33,51 +34,42 @@ export default class Content {
     }
 
     navlink(scrollPercentage) {
-
         const scrollTop = scrollPercentage * (this.sizes.documentHeight - this.sizes.windowHeight)
         gsap.to(window, { scrollTo: scrollTop, duration: 1.5, ease: 'power2.inOut' });
-
-        $(".section[data-id='" + this.section.current + "']").css('animation', 'fadeOut 0.5s')
-        setTimeout(() => {
-            $(".section[data-id='" + this.section.current + "']").hide()
-        }, 500)
-
-        setTimeout(() => {
-            updateSectionID()
-            updateContent()
-        }, 1500)
     }
 
     updateSectionID() {
 
-        const percentage = this.scrollbar.percentage
-        const markers = this.section.markers
+        if (this.firstEvent) {
+            const percentage = this.scrollbar.percentage
+            const markers = this.section.markers
 
-        switch (true) {
-            case percentage <= markers[1]:
-                this.section.next = 1
-                break;
-            case percentage < markers[2]:
-                this.section.next = 2
-                break;
-            case percentage < markers[3]:
-                this.section.next = 3
-                break;
-            case percentage < markers[4]:
-                this.section.next = 4
-                break;
-            case percentage < markers[5]:
-                this.section.next = 5
-                break;
-            case percentage < markers[6]:
-                this.section.next = 6
-                break;
-            default:
-                break;
-        }
+            switch (true) {
+                case percentage <= markers[1]:
+                    this.section.next = 1
+                    break;
+                case percentage < markers[2]:
+                    this.section.next = 2
+                    break;
+                case percentage < markers[3]:
+                    this.section.next = 3
+                    break;
+                case percentage < markers[4]:
+                    this.section.next = 4
+                    break;
+                case percentage < markers[5]:
+                    this.section.next = 5
+                    break;
+                case percentage < markers[6]:
+                    this.section.next = 6
+                    break;
+                default:
+                    break;
+            }
 
-        if (this.section.current != this.section.next) {
-            this.updateContent()
+            if (this.section.current != this.section.next) {
+                this.updateContent()
+            }
         }
 
     }

@@ -26,6 +26,7 @@ export default class Scrollbar {
         this.instance.percentage = scrollPercentCalc <= 1 ? scrollPercentCalc : 1
 
         // Update CSS
-        document.getElementById("exploreNavLineProgress").style.transform = `scaleY(${this.instance.percentage * 18})`
+        document.getElementById("exploreNavLineProgress").style.transform = `scaleY(${this.instance.buffer * 18})`
+
     }
 }

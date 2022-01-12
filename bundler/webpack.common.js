@@ -9,91 +9,97 @@ module.exports = {
     {
         filename: 'bundle.[contenthash].js',
         path: path.resolve(__dirname, '../dist'),
-        // publicPath: 'http://10.62.76.84:8080/',
+        // publicPath: 'https://samstoppani.github.io/portfolio/',
     },
     devtool: 'source-map',
     plugins:
-    [
-        new CopyWebpackPlugin({
-            patterns: [
-                { from: path.resolve(__dirname, '../static') }
-            ]
-        }),
-        new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, '../src/index.html'),
-            minify: true
-        }),
-        new MiniCSSExtractPlugin()
-    ],
+        [
+            new CopyWebpackPlugin({
+                patterns: [
+                    { from: path.resolve(__dirname, '../static') }
+                ]
+            }),
+            new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, '../src/index.html'),
+                minify: true
+            }),
+            new MiniCSSExtractPlugin()
+        ],
     module:
     {
         rules:
-        [
-            // HTML
-            {
-                test: /\.(html)$/,
-                use: ['html-loader']
-            },
+            [
+                // HTML
+                {
+                    test: /\.(html)$/,
+                    use: ['html-loader']
+                },
 
-            // JS
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use:
-                [
-                    'babel-loader'
-                ]
-            },
+                // JS
+                {
+                    test: /\.js$/,
+                    exclude: /node_modules/,
+                    use:
+                        [
+                            'babel-loader'
+                        ]
+                },
 
-            // CSS
-            {
-                test: /\.css$/,
-                use:
-                [
-                    MiniCSSExtractPlugin.loader,
-                    'css-loader'
-                ]
-            },
+                // CSS
+                {
+                    test: /\.css$/,
+                    use:
+                        [
+                            MiniCSSExtractPlugin.loader,
+                            'css-loader'
+                        ]
+                },
 
-            // Images
-            // {
-            //     test: /\.(jpg|png|gif|svg)$/,
-            //     use:
-            //     [
-            //         {
-            //             loader: 'file-loader',
-            //             options:
-            //             {
-            //                 outputPath: 'assets/images/',
-            //                 name: '[name].[ext]'
-            //             }
-            //         }
-            //     ]
-            // },
+                // Audio
+                {
+                    test: /\.mp3$/,
+                    loader: 'file-loader'
+                },
 
-            // Fonts
-            {
-                test: /\.(ttf|eot|woff|woff2)$/,
-                use:
-                [
-                    {
-                        loader: 'file-loader',
-                        options:
-                        {
-                            outputPath: 'assets/fonts/'
-                        }
-                    }
-                ]
-            },
+                // Images
+                // {
+                //     test: /\.(jpg|png|gif|svg)$/,
+                //     use:
+                //     [
+                //         {
+                //             loader: 'file-loader',
+                //             options:
+                //             {
+                //                 outputPath: 'assets/images/',
+                //                 name: '[name].[ext]'
+                //             }
+                //         }
+                //     ]
+                // },
 
-            // Shaders
-            {
-                test: /\.(glsl|vs|fs|vert|frag)$/,
-                exclude: /node_modules/,
-                use: [
-                    'raw-loader'
-                ]
-            }
-        ]
+                // Fonts
+                {
+                    test: /\.(ttf|eot|woff|woff2)$/,
+                    use:
+                        [
+                            {
+                                loader: 'file-loader',
+                                options:
+                                {
+                                    outputPath: 'assets/fonts/'
+                                }
+                            }
+                        ]
+                },
+
+                // Shaders
+                {
+                    test: /\.(glsl|vs|fs|vert|frag)$/,
+                    exclude: /node_modules/,
+                    use: [
+                        'raw-loader'
+                    ]
+                }
+            ]
     }
 }

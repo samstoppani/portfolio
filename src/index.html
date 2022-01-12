@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" content="minimum-scale=1" />
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
   <title>Sam Stoppani: Creative Developer</title>
 </head>
 
@@ -11,6 +12,20 @@
   <div id="wrapper">
     <canvas class="webgl"></canvas>
     <div id="overlay">
+
+      <div id='musicBtn' data-playing="false">
+        <!-- <embed src="assets/audio/3.mp3" loop="true" autostart="true" hidden="false" /> -->
+        <!-- <audio id='music' src="assets/audio/2.mp3" autostart="true" controls="controls"></audio> -->
+        <div class='musicIcon'>
+          <span class='bar'></span>
+          <span class='bar'></span>
+          <span class='bar'></span>
+          <span class='bar'></span>
+          <span class='bar'></span>
+          <span class='bar'></span>
+          <span class='bar'></span>
+        </div>
+      </div>
 
       <div class="exploreNav">
         <div class="exploreNavInner">
@@ -49,316 +64,20 @@
       </div>
 
       <div class="container">
-        <!-- <div id="loader">
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-        </div> -->
 
         <div id="content">
 
-          <div class="section" style="text-align: center" data-id="1">
+          <div class="section" style="text-align: center;" data-id="1">
+            <div class='center'>
+              <button id='enterBtn' class='btn navLink' data-scroll-percentage="0.100">Enter</button>
+            </div>
+          </div>
+
+          <!-- <div class="section" style="text-align: center" data-id="1">
             <div class='center'>
               <p>Scroll to enter.</p>
             </div>
-          </div>
+          </div> -->
 
           <div class="section" style=" text-align: center;" data-id="2">
             <div class='center'>
@@ -400,47 +119,53 @@
               <a class='project'
                 href='https://www.linkedin.com/posts/sam-stoppani-181890158_after-a-little-learning-ive-made-my-first-activity-6780575666174787584-ZGUf'
                 target="_blank" style='z-index: 1;'>
-                <img src="assets/images/personal/neuralNetwork.jpg" style='text-align: center;'>
+                <img src="assets/images/projects/neuralNetwork.jpg" style='text-align: center;'>
                 <div class="overlay">Neural Network to Recognise Handwritten Digits</div>
               </a>
-              <a class='project' target="_blank" style='z-index: 2;'>
-                <img src="assets/images/personal/musicalUX.jpg">
+              <!-- <a class='project' target="_blank" style='z-index: 2;'>
+                <img src="assets/images/projects/musicalUX.jpg">
                 <div class="overlay">3D Musical Experience</div>
+              </a> -->
+              <a class='project' href='https://www.linkedin.com/feed/update/urn:li:activity:6875127708779606016/'
+                target="_blank" style='z-index: 2;'>
+                <img src="assets/images/projects/theSandbox.jpg">
+                <div class="overlay">The Sandbox Logo Competition using Blender</div>
               </a>
               <a class='project' href='https://www.gradu8Maths.com/' target="_blank" style='z-index: 3;'>
-                <img src="assets/images/commercial/gradu8Maths.jpg">
+                <img src="assets/images/projects/gradu8Maths.jpg">
                 <div class="overlay">Maths Tutor in Doncaster</div>
               </a>
               <a class='project' href='https://www.cbensonfabrication.co.uk/' target="_blank" style='z-index: 4;'>
-                <img src="assets/images/commercial/cBensonFabrication.jpg">
+                <img src="assets/images/projects/cBensonFabrication.jpg">
                 <div class="overlay">Mechanical Engineering in Doncaster</div>
               </a>
               <a class='project' href='https://www.nottinghamflexiblestorage.co.uk/' target="_blank"
                 style='z-index: 5;'>
-                <img src="assets/images/commercial/flexibleSelfStorage.jpg">
+                <img src="assets/images/projects/flexibleSelfStorage.jpg">
                 <div class="overlay">External Storage in Nottingham</div>
               </a>
               <a class='project' href='https://samstoppani.github.io/particlesImageRender/' target="_blank"
                 style='z-index: 6;'>
-                <img src="assets/images/personal/particleImages.jpg">
-                <div class="overlay">3D Particle Image Render</div>
+                <img src="assets/images/projects/particleImages.jpg">
+                <div class="overlay">3D Particle Image Render using Three.js</div>
               </a>
-              <a class='project' target="_blank" style='z-index: 7;'>
-                <img src="assets/images/personal/oldPersonalProfile.jpg">
-                <div class="overlay">2020 Portfolio</div>
+              <a class='project' href='https://samstoppani.github.io/2021portfolio/' target="_blank"
+                style='z-index: 7;'>
+                <img src="assets/images/projects/2021portfolio.jpg">
+                <div class="overlay">2021 Portfolio</div>
               </a>
               <a class='project' href='https://samstoppani.github.io/particles3DModelRender/' target="_blank"
                 style='z-index: 8;'>
-                <img src="assets/images/personal/particle3DModels.jpg">
-                <div class="overlay">3D Model and Animation Render as Particles</div>
+                <img src="assets/images/projects/particle3DModels.jpg">
+                <div class="overlay">3D Model and Animation Render as Particles using Three.js</div>
               </a>
-              <a class='project' target="_blank" style='z-index: 9;'>
-                <img src="assets/images/commercial/ryePropertyManagement.jpg">
+              <a class='project' href='https://www.ryepropertymanagement.co.uk/' target="_blank" style='z-index: 9;'>
+                <img src="assets/images/projects/ryePropertyManagement.jpg">
                 <div class="overlay">Property Management in Nottingham</div>
               </a>
               <a class='project' href='https://www.segeroconsultants.com/' target="_blank" style='z-index: 10; '>
-                <img src="assets/images/commercial/segero.jpg" style="text-align: center;">
-                <div class="overlay">Interactive 3D website for Segero</div>
+                <img src="assets/images/projects/segero.jpg" style="text-align: center;">
+                <div class="overlay">Interactive 3D website for Segero using Three.js</div>
               </a>
 
             </div>
@@ -451,13 +176,10 @@
             <h1 style='margin-top: 100px'>Contact</h1>
             <p style='padding: 20px;'>If you would like to get in touch, drop me a message.</p>
 
-            <form class='mx-auto' method="POST">
-              <div class="formGroup">
-                <input type="text" id="name" name="name" placeholder="Name" />
-              </div>
+            <form class='mx-auto' id="my-form" action="https://formspree.io/f/mwkyvkvz" method="POST">
 
               <div class="formGroup">
-                <input type="text" id="email" name="email" placeholder="Email" />
+                <input type="email" id="email" name="email" placeholder="Email" />
               </div>
 
               <div class="formGroup">
@@ -465,19 +187,52 @@
                   placeholder="Write your message..."></textarea>
               </div>
 
-              <div class='text-center'>
-                <button type="button" id='submitBtn' class="">
-                  Send
-                </button>
+              <div>
+                <button class='btn' id="my-form-button">Send</button>
+                <p id="my-form-status"></p>
               </div>
-
             </form>
+
+            <div>
+              <a href="https://www.linkedin.com/in/sam-stoppani-181890158/" target="_blank" class="contactIcon">
+                <img src="assets/images/linkedInLogo.png"></img>
+              </a>
+              <a href="https://github.com/samstoppani" target="_blank" class="contactIcon">
+                <img src="assets/images/gitHubLogo.png"></img>
+              </a>
+            </div>
+
           </div>
 
         </div>
       </div>
     </div>
   </div>
+  <script>
+
+    var form = document.getElementById("my-form");
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+  </script>
+
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 </body>
