@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" content="minimum-scale=1" />
+  <title>Sam Stoppani: Creative Developer</title>
+</head>
+
+<body class="body">
+  <div id="wrapper">
+    <canvas class="webgl"></canvas>
+    <div id="overlay">
+
+      <div class="exploreNav">
+        <div class="exploreNavInner">
+          <div id="exploreNavLineProgress"></div>
+
+          <a class="navLink" data-scroll-percentage="0.100">
+            <div class="exploreNavDiamond">
+              <div class="outerDiamond"></div>
+              <div class="innerDiamond"></div>
+            </div>
+            <span>Home</span>
+          </a>
+
+          <a class="navLink" data-scroll-percentage="0.510">
+            <div class="exploreNavDiamond">
+              <div class="outerDiamond"></div>
+              <div class="innerDiamond"></div>
+            </div>
+            <span>About</span>
+          </a>
+          <a class="navLink" data-scroll-percentage="0.617">
+            <div class="exploreNavDiamond">
+              <div class="outerDiamond"></div>
+              <div class="innerDiamond"></div>
+            </div>
+            <span>Projects</span>
+          </a>
+          <a class="navLink" data-scroll-percentage="1">
+            <div class="exploreNavDiamond">
+              <div class="outerDiamond"></div>
+              <div class="innerDiamond"></div>
+            </div>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- <div id="loader">
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+          <div class="c"></div>
+        </div> -->
+
+        <div id="content">
+
+          <div class="section" style="text-align: center" data-id="1">
+            <div class='center'>
+              <p>Scroll to enter.</p>
+            </div>
+          </div>
+
+          <div class="section" style=" text-align: center;" data-id="2">
+            <div class='center'>
+              <p>
+                I am a creative developer and designer with a ‘no problem is too
+                big’ work ethic.
+              </p>
+            </div>
+          </div>
+
+          <div class="section" style="text-align: center;" data-id="3">
+            <div class='center'>
+              <p>
+                ...and love to create immersive experiences.
+              </p>
+            </div>
+          </div>
+
+          <div class="section" style="text-align: center;" data-id="4">
+            <div class='center'>
+              <h1>About</h1>
+              <p>This is me <i class="arrow right"></i><i class="arrow right"></i></p>
+              <!-- <p>I enjoy snowboarding, surfing and climbing</p> -->
+            </div>
+          </div>
+
+          <div class="section" data-id="5">
+            <h1 style='text-align: center; margin-top: 100px'>Projects</h1>
+            <p style='text-align: center;'>Click to view a project.</p>
+            <div class='projects' style='transform: translate(-50%, -50%)'>
+
+              <!-- <svg width="400" height="400" id="svg" style='position:fixed;'>
+                <g transform="translate(200,200)scale(50)">
+                  <path id="motionPath" d="m 0 0 Q -4 0 -4 1 q 0 1 4 1 q 4 0 4 -1 q 0 -1 -4 -1" fill="none"
+                    stroke-miterlimit="10" stroke-width="4" />
+                </g>
+              </svg> -->
+
+              <a class='project'
+                href='https://www.linkedin.com/posts/sam-stoppani-181890158_after-a-little-learning-ive-made-my-first-activity-6780575666174787584-ZGUf'
+                target="_blank" style='z-index: 1;'>
+                <img src="assets/images/personal/neuralNetwork.jpg" style='text-align: center;'>
+                <div class="overlay">Neural Network to Recognise Handwritten Digits</div>
+              </a>
+              <a class='project' target="_blank" style='z-index: 2;'>
+                <img src="assets/images/personal/musicalUX.jpg">
+                <div class="overlay">3D Musical Experience</div>
+              </a>
+              <a class='project' href='https://www.gradu8Maths.com/' target="_blank" style='z-index: 3;'>
+                <img src="assets/images/commercial/gradu8Maths.jpg">
+                <div class="overlay">Maths Tutor in Doncaster</div>
+              </a>
+              <a class='project' href='https://www.cbensonfabrication.co.uk/' target="_blank" style='z-index: 4;'>
+                <img src="assets/images/commercial/cBensonFabrication.jpg">
+                <div class="overlay">Mechanical Engineering in Doncaster</div>
+              </a>
+              <a class='project' href='https://www.nottinghamflexiblestorage.co.uk/' target="_blank"
+                style='z-index: 5;'>
+                <img src="assets/images/commercial/flexibleSelfStorage.jpg">
+                <div class="overlay">External Storage in Nottingham</div>
+              </a>
+              <a class='project' href='https://samstoppani.github.io/particlesImageRender/' target="_blank"
+                style='z-index: 6;'>
+                <img src="assets/images/personal/particleImages.jpg">
+                <div class="overlay">3D Particle Image Render</div>
+              </a>
+              <a class='project' target="_blank" style='z-index: 7;'>
+                <img src="assets/images/personal/oldPersonalProfile.jpg">
+                <div class="overlay">2020 Portfolio</div>
+              </a>
+              <a class='project' href='https://samstoppani.github.io/particles3DModelRender/' target="_blank"
+                style='z-index: 8;'>
+                <img src="assets/images/personal/particle3DModels.jpg">
+                <div class="overlay">3D Model and Animation Render as Particles</div>
+              </a>
+              <a class='project' target="_blank" style='z-index: 9;'>
+                <img src="assets/images/commercial/ryePropertyManagement.jpg">
+                <div class="overlay">Property Management in Nottingham</div>
+              </a>
+              <a class='project' href='https://www.segeroconsultants.com/' target="_blank" style='z-index: 10; '>
+                <img src="assets/images/commercial/segero.jpg" style="text-align: center;">
+                <div class="overlay">Interactive 3D website for Segero</div>
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="section" style="text-align: center;" data-id="6">
+            <h1 style='margin-top: 100px'>Contact</h1>
+            <p style='padding: 20px;'>If you would like to get in touch, drop me a message.</p>
+
+            <form class='mx-auto' method="POST">
+              <div class="formGroup">
+                <input type="text" id="name" name="name" placeholder="Name" />
+              </div>
+
+              <div class="formGroup">
+                <input type="text" id="email" name="email" placeholder="Email" />
+              </div>
+
+              <div class="formGroup">
+                <textarea type="text" id="message" name="message" rows="4"
+                  placeholder="Write your message..."></textarea>
+              </div>
+
+              <div class='text-center'>
+                <button type="button" id='submitBtn' class="">
+                  Send
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+</body>
+
+</html>
