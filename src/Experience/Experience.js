@@ -105,26 +105,26 @@ export default class Experience {
         document.getElementById("enterBtn").addEventListener("click", () => {
 
             if (!this.content.firstEvent) {
-                this.music = {
-                    audio: new Howl({
-                        src: [music],
-                        volume: 0.5,
-                        autoplay: false,
-                        loop: true
-                    }),
-                    tween: gsap.to(".bar", {
-                        height: "100%",
-                        duration: 1,
-                        ease: 'none',
-                        yoyo: true,
-                        stagger: {
-                            each: 0.2,
-                            from: 'edges',
-                            yoyo: true,
-                            repeat: -1,
-                        }
-                    })
-                }
+                // this.music = {
+                //     audio: new Howl({
+                //         src: [music],
+                //         volume: 0.5,
+                //         autoplay: false,
+                //         loop: true
+                //     }),
+                //     tween: gsap.to(".bar", {
+                //         height: "100%",
+                //         duration: 1,
+                //         ease: 'none',
+                //         yoyo: true,
+                //         stagger: {
+                //             each: 0.2,
+                //             from: 'edges',
+                //             yoyo: true,
+                //             repeat: -1,
+                //         }
+                //     })
+                // }
 
                 this.content.firstEvent = true
                 this.music.audio.play()
@@ -150,9 +150,9 @@ export default class Experience {
 
             if (this.content.firstEvent) {
                 this.scrollbar.update()
+                this.content.updateSectionID()
+                this.content.updateProjectsAnimation()
             }
-            this.content.updateSectionID()
-            this.content.updateProjectsAnimation()
         })
 
         // NavLink events

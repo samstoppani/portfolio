@@ -40,37 +40,36 @@ export default class Content {
 
     updateSectionID() {
 
-        if (this.firstEvent) {
-            const percentage = this.scrollbar.percentage
-            const markers = this.section.markers
+        const percentage = this.scrollbar.percentage
+        const markers = this.section.markers
 
-            switch (true) {
-                case percentage <= markers[1]:
-                    this.section.next = 1
-                    break;
-                case percentage < markers[2]:
-                    this.section.next = 2
-                    break;
-                case percentage < markers[3]:
-                    this.section.next = 3
-                    break;
-                case percentage < markers[4]:
-                    this.section.next = 4
-                    break;
-                case percentage < markers[5]:
-                    this.section.next = 5
-                    break;
-                case percentage < markers[6]:
-                    this.section.next = 6
-                    break;
-                default:
-                    break;
-            }
-
-            if (this.section.current != this.section.next) {
-                this.updateContent()
-            }
+        switch (true) {
+            case percentage <= markers[1]:
+                this.section.next = 1
+                break;
+            case percentage < markers[2]:
+                this.section.next = 2
+                break;
+            case percentage < markers[3]:
+                this.section.next = 3
+                break;
+            case percentage < markers[4]:
+                this.section.next = 4
+                break;
+            case percentage < markers[5]:
+                this.section.next = 5
+                break;
+            case percentage < markers[6]:
+                this.section.next = 6
+                break;
+            default:
+                break;
         }
+
+        if (this.section.current != this.section.next) {
+            this.updateContent()
+        }
+
 
     }
 
